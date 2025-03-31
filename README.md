@@ -1,20 +1,45 @@
-#Bot de Compras Inteligente (Proyecto en Evolución)
+# 🤖 **Bot de Compras Inteligent (Proyecto en Evolución)** 📈
 
-- Introducción
+## 🔍 **Introducción**
+Este proyecto **optimiza** la planificación de compras mediante inteligencia artificial y análisis predictivo. Combina:
 
-Este proyecto nace con el objetivo de optimizar la planificación de compras mediante cálculos clave en la gestión de inventarios y costos. En su fase inicial, el bot es capaz de:
+- 📊 **Ciencia de datos** avanzada
+- 🤖 **Algoritmos** de machine learning
+- ⚡ **Automatización** de procesos
+- 📈 **Análisis de métricas** clave en tiempo real
+
+## 🚀 **Características Principales:**
 
 - Calcular el **punto de reorden** para evitar quiebres de stock
 - Estimar el ** costo total ** de la población
 - - Aplicar ** descuentos por volumen ** de compra
+    
+```python
+# Ejemplo de cálculo de inventario óptimo
+def calcular_eoq(demanda, costo_orden, costo_mantener):
+    return ((2 * demanda * costo_orden) / costo_mantener)**0.5
 
-Sin embargo, esta es solo la etapa primera de un sistema en constante evolución. Pronto venir la magia de los datos. Setrabajoá en:
+# Cálculo de cobertura de stock
+def calcular_cobertura(stock_actual, demanda_promedio):
+    return stock_actual / demanda_promedio
 
-- Integración de ** Aprendizaje de máquinas **
-- Capacidades predictivas
-- Optimización inteligente de las decisiones
+## 📈 **Métricas Clave**
 
-Objetivos del Proyecto
+| Indicador       | Fórmula                              | Impacto                     |
+|-----------------|--------------------------------------|-----------------------------|
+| **Cobertura**   | `Stock Actual / Demanda Promedio`    | 📉 Riesgo operacional       |
+| **Rotación**    | `Ventas Anuales / Inventario Promedio` | 💰 Eficiencia financiera    |
+| **Stock Muerto**| `Sin movimiento > 180 días`          | ⚠️ Capital inmovilizado     |
+
+### 🔍 **Explicación de Métricas**
+```python
+# Ejemplo de cálculo en Python
+def calcular_metricas(stock, demanda, ventas_anuales):
+    cobertura = stock / demanda
+    rotacion = ventas_anuales / stock
+    return cobertura, rotacion
+
+**Objetivos del Proyecto**
 
 Automatizar con decisiones con modelos de predicción  
 Mejora de la gestión de inventarios con análisis de datos  
@@ -36,7 +61,6 @@ Evolución hacia la herramienta hacia escalable
 
 - ** Nuevo en v1.2 **:
 - Modelos de pronóstico mejorados
-- Punto de reordenación
 - Optimización automática de parámetros
 - Corrección de errores - Mejora de rendimiento
 
@@ -61,12 +85,17 @@ python main.py --modo=avanzado
 
     - Envía tus PRs - ¡Tu código puede hacer la diferencia!
 
-- Contacta al Equipo 👩💻
+## 📬 **Contacto Profesional**
 
-✉️ Email: Kattyacontreras.v@gmail.com
-🐦 GitHub: @Katita31
-💼 LinkedIn: Kattya Contreras
-🎁 ¿Por qué unirte? ✨
+📍 **Ubicación**: Santiago, Chile  
+📧 **Email**: [kattyacontreras.v@gmail.com](mailto:kattyacontreras.v@gmail.com)  
+
+🔗 **LinkedIn**: [Kattya Contreras](https://www.linkedin.com/in/kattyacontrerasv/)  
+🐱 **GitHub**: [@Katita31](https://github.com/Katita31)  
+
+### 🌐 **Conectemos**
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kattyacontrerasv/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Katita31)
 
 ✅ Proyecto en crecimiento constante 🌱
 ✅ Tecnologías modernas (Python, ML, Dashboards) 🐍🤖
